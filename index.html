@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <fieldset>
+    <legend>Contact and personal info</legend>
+  <label for="date">The Date is:</label>
+  <input type="date" name="date" id="date" pattern="[0-9]" placeholder="Date"/><br>
+  <label for="childName">Child's Name:</label>
+  <input type="text" name="childName" id="childName"  pattern="[A-Za-z]" placeholder="Child's Name"/><br>
+  <label for="birthday">Child's Birthday:</label>
+  <input type="text" name="birthday" id="birthday"   placeholder="Child's Birthday"/><br>
+  <label for="parentName">Parent's Name:</label>
+  <input type="text" name="parentName" id="parentName"  pattern="[A-Za-z]" placeholder="Parent's Name"/><br>
+  <label for="parentEmail">Parent Email:</label>
+  <input type="email" name="parentEmail" id="parentEmail"  pattern="[a-zA-Z0-9.+-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}" placeholder="Parental Email"/><br>
+    </fieldset>
+  <fieldset>
+    <legend>Extra Info</legend>
+   <label for="parentsign">Have you signed the approval form?:</label>
+  <input type="checkbox" name="parentsign" id="parentsign"  placeholder="Parental Approval"/>
+    <br>
+    <label for="books"> BOOK SELECTION</label>
+  <select name="books" id="books">
+      <option value="Bookchoice">Pick your Choice of book</option>
+      <option value="Cat in the Hat">Cat in the Hat</option>
+      <option value="Hop on Pop">Hop on Pop</option>
+      <option value="Harry Potter and the Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
+      <option value="Charlotte's Web">Charlotte's Web</option>
+      <option value="Goodnight Moon">Goodnight Moon</option>
+      <br>
+      <textarea name="Any Comments" id="Any Comments" cols="30" rows="10">
+        Please leave any comments in this box
+      </textarea>
+    <br>
+    <button name="submit" id="submit">Send Your Selections</button><br>
+    <button name="clear" id="clear">Clear your request</button><br>
+  </select>
+    </fieldset>
+</body>
+
+</html>
